@@ -10,10 +10,12 @@
         "production": "mix --production"
     },
     "devDependencies": {
+        "@hail2u/css-mqpacker": "github:hail2u/node-css-mqpacker",
         "axios": "^0.21",
         "browser-sync": "^2.26.14",
         "browser-sync-webpack-plugin": "^2.2.2",
         "laravel-mix": "^6.0.6",
+        "laravel-mix-serve": "^2.1.0",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
         "resolve-url-loader": "^3.1.2",
