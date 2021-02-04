@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Models\MiniBlogRecord;
 use App\Http\Controllers\StaticPageController;
 use App\Http\Controllers\BasicConroller;
+use App\Http\Controllers\Admin;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,30 +17,18 @@ use App\Http\Controllers\BasicConroller;
 */
 
 Route::get('/', [ StaticPageController::class,'index'])->name('index');
-Route::get('/plasm-cutting', [StaticPageController::class, 'plasm_cutting'])->name('plasm-cutting');
+Route::get('/plasm-cutting', [StaticPageController::class, 'plasmCutting'])->name('plasm-cutting');
+Route::get('/sheet-bend', [StaticPageController::class, 'sheetBend'])->name('sheet-bend');
+Route::get('/pipe-bend', [StaticPageController::class, 'pipeBend'])->name('pipe-bend');
+Route::get('/cutting', [StaticPageController::class, 'cutting'])->name('cutting');
+Route::get('/forge', [StaticPageController::class, 'forge'])->name('forge');
+Route::get('/painting', [StaticPageController::class, 'painting'])->name('painting');
+Route::get('/docs', [StaticPageController::class, 'docs'])->name('docs');
+Route::get('/gallery/{gallery_id}', [\App\Http\Controllers\GalleryController::class, 'index'])->name('gallery');
 
-Route::get('/pipe-bend', function () {
-    return view('pages/-bend');
-})->name('pipe-bend');
-
-Route::get('/sheet-bend', function () {
-    return view('pages/sheet-cutting');
-})->name('sheet-bend');
-
-Route::get('/cutting', function () {
-    return view('pages/cutting');
-})->name('cutting');
-
-//! ваще хз как работать с query
-Route::get('/gallery/{category}?page={page}', [UserController::class, 'index'])
-->name('gallery');
-// Route::get('/', function () {
-//     return view('index');
-// });
 Route::get('/login', [BasicConroller::class, 'index'])->name('login');
 Route::post('/loginDo', [BasicConroller::class, 'singin']);
-
 Route::middleware('auth')->prefix('admin')->name('admin.')->group( function(){
-    Route::resource('panel', 'Admin');
+    Route::resource('panel', Admin::class);
 }
 );

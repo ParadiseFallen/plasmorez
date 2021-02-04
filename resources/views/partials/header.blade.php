@@ -29,22 +29,22 @@
                         </li>
                     @endforeach
                     <li class="nav-item d-lg-none d-flex">
-                        <a class="nav-link" aria-current="page" href="#">Художественная ковка</a>
+                        <a class="nav-link" aria-current="page" href="{{route('forge')}}">Художественная ковка</a>
                     </li>
                     <li class="nav-item d-lg-none d-flex">
-                        <a class="nav-link" aria-current="page" href="#">Подготовка и покраска</a>
+                        <a class="nav-link" aria-current="page" href="{{route('painting')}}">Подготовка и покраска</a>
                     </li>
                     <li class="nav-item d-lg-none d-flex">
-                        <a class="nav-link" aria-current="page" href="#">Докумкентация</a>
+                        <a class="nav-link" aria-current="page" href="{{route('docs')}}">Докумкентация</a>
                     </li>
                     <li class="nav-item dropdown d-none d-lg-flex">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Ещё
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Художественная ковка</a></li>
-                            <li><a class="dropdown-item" href="#">Подготовка и покраска</a></li>
-                            <li><a class="dropdown-item" href="#">Докумкентация</a></li>
+                            <li><a class="dropdown-item" href="{{route('forge')}}">Художественная ковка</a></li>
+                            <li><a class="dropdown-item" href="{{route('painting')}}">Подготовка и покраска</a></li>
+                            <li><a class="dropdown-item" href="{{route('docs')}}">Докумкентация</a></li>
                         </ul>
                     </li>
                 </ul>

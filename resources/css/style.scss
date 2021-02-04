@@ -16,6 +16,7 @@
 .section-header
 {
     font-weight: 700;
+    word-wrap: break-word;
 }
 .white-btn
 {
@@ -87,7 +88,7 @@
     position: relative;
     border-radius: 15px;
     padding: 15px 15px 80px 15px;
-    border: 2px solid #000;
+    border: 2px solid #000000;
     overflow: hidden;
     h2
     {
@@ -96,8 +97,7 @@
         @media screen and (max-width : 568px)
         {
             word-break: break-all;
-        }
-    }
+        }    }
     p
     {
         font-size: 18px;
@@ -324,42 +324,44 @@ footer
     background: #F0F0F0;
 }
 
-#fancy-info
+
+.fancy-card
 {
-    .fancy-card
+    border-radius: 20px;
+    border: 2px solid #000;
+    overflow: hidden;
+    .text
     {
-        border-radius: 20px;
-        border: 2px solid #000;
-        overflow: hidden;
-        .text
+        font-weight: 500;
+        font-size: 24px;
+        &-small
         {
-            font-weight: 500;
-            font-size: 24px;
+            font-size: 18px;
         }
+    }
+    .number
+    {
+        font-weight: 700;
+        background: #000;
+        color: #fff;
+        font-size: 72px;
+    }
+    .number.order-last
+    {
+        font-weight: 700;
+        background: #000;
+        color: #fff;
+        font-size: 72px;
+        transform: translate(15px, 0);
+    }
+    &:last-child
+    {
+        width: fit-content;
         .number
         {
-            font-weight: 700;
-            background: #000;
-            color: #fff;
-            font-size: 72px;
+            padding: 0 30px;
         }
-        .number.order-last
-        {
-            font-weight: 700;
-            background: #000;
-            color: #fff;
-            font-size: 72px;
-            transform: translate(15px, 0);
-        }
-        &:last-child
-        {
-            width: fit-content;
-            .number
-            {
-                padding: 0 30px;
-            }
 
-        }
     }
 }
 section.gray-bg
@@ -386,8 +388,13 @@ section.gray-bg
             color: #fff;
             font-size: 72px;
             min-width: 100px;
+            @media screen and (max-width: 768px){
+                font-size: 40px;
+                word-break: break-all;
+            }
         }
         border-radius: 20px 0 0 20px;
+
         overflow: hidden;
         &-text
         {
@@ -395,10 +402,122 @@ section.gray-bg
             font-size: 24px;
             background: #000000;
             color: #fff;
+            @media screen and (max-width: 768px){
+                font-size: 18px;
+                word-break: break-all;
+            }
         }
         &.right-side
         {
             border-radius: 0 20px 20px 0;
+            @media screen and (max-width: 576px){
+                border-radius: 20px;
+            }
+        }
+        @media screen and (max-width: 576px){
+            border-radius: 20px;
+        }
+    }
+}
+#call-2,
+#call
+{
+    h1
+    {
+        color: #fff;
+        font-weight: 700;
+    }
+    background-size: cover;
+    background: 70% no-repeat url('/img/call-1.png'),#000;
+}
+#call-2
+{
+    p
+    {
+        color: #fff;
+    }
+    background: right no-repeat url('/img/call-2.png'),#000;
+}
+
+#pipe-tables
+{
+    h1
+    {
+        font-weight: 700;
+        font-size: 24px;
+    }
+    h3
+    {
+        font-weight: 700;
+        font-size: 18px;
+    }
+}
+
+ul
+{
+    li::marker
+    {
+        color: #CD4A3D;
+    }
+}
+#methods
+{
+    .method-card
+    {
+        h1
+        {
+            font-size: 200px;
+            font-family: 'Oswald';
+            line-height: 180px;
+            color: #000;
+        }
+        h3
+        {
+            font-weight: 700;
+            font-size: 18px;
+        }
+        p
+        {
+            font-size: 14px;
+        }
+    }
+}
+.project-card-wrap
+{
+    text-decoration: none;
+}
+#contact-modal
+{
+    transition: backdrop-filter .5s ease-in-out;
+    &.show
+    {
+        backdrop-filter: blur(10px) brightness(.5);
+    }
+    .data-card
+    {
+        padding: 0;
+        border: 2px solid #000;
+    }
+    label
+    {
+        font-weight: 600;
+        font-size: 14px;
+    }
+    input
+    {
+        border-radius: 20px;
+        border: 2px solid #000;
+        padding: 10px 15px;
+        &:focus
+        {
+            outline: none;
+        }
+    }
+    button
+    {
+        &:focus
+        {
+            outline: none;
         }
     }
 }

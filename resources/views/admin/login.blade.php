@@ -50,11 +50,11 @@
             <form class="form" action="/loginDo" method="POST">
                 @csrf
                 <div class="inputs">
-                    <label for="name">Login</label>
+                    <label class="label_login" for="name">Login</label>
                     <input type="text" name="name">
                 </div>
                 <div class="inputs">
-                    <label for="password">Password</label>
+                    <label class="label_login" for="password">Password</label>
                     <input type="password" name="password">
                 </div>
                 <button class="btn btn-primary form_btn">Войти</button>

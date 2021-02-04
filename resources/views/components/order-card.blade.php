@@ -9,9 +9,9 @@
                 </div>
                 <a href="#" class="dark-btn my-md-4 my-1">Заказать</a>
             </div>
-            <div class="col-lg-6 order-lg-last order-first">
+            <div class="col-lg-6 @if(!isset($reverse)) order-lg-last @endif order-first">
                 <div class="brackets m-3">
-                    <img src="{{$data->image}}" alt="" class="img-fluid">
+                    <img src="{{$data->image}}" alt="" class="img-fluid m-4">
                 </div>
             </div>
         </div>

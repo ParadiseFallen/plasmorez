@@ -1,112 +1,168 @@
 <?php
-namespace App;
-use \Illuminate\Database\Eloquent\Collection;
+    namespace App;
 
-class StaticPageData
-{
-    public static function GetIndexGallery()
+    use \Illuminate\Database\Eloquent\Collection;
+
+    class StaticPageData
     {
-        $collection=new Collection();
-        $collection->add(
-        [
-                (object)[
-                'image'=>'/img/mock-1.jpg',
-                'title'=>'Lorem ipsum dolor sit amet.'
-            ],
-                (object)[
-                'image'=>'/img/mock-1.jpg',
-                'title'=>'Lorem ipsum dolor sit amet.'
-            ],
-                (object)[
-                'image'=>'/img/mock-1.jpg',
-                'title'=>'Lorem ipsum dolor sit amet.'
-            ],
-                (object) [
-                'image'=>'/img/mock-1.jpg',
-                'title'=>'Lorem ipsum dolor sit amet.'
-            ],
-                (object)[
-                'image'=>'/img/mock-1.jpg',
-                'title'=>'Lorem ipsum dolor sit amet.'
-            ],
-                (object)[
-                'image'=>'/img/mock-1.jpg',
-                'title'=>'Lorem ipsum dolor sit amet.'
-            ]
-        ]);
-        return $collection;
-    }
-    public static function GetPlasmCuttingGallery()
-    {
-        $collection = new Collection();
-        $collection->add(
-            [
-                (object)[
-                    'image' => '/img/mock-1.jpg',
-                    'title' => 'Lorem ipsum dolor sit amet.'
-                ],
-                (object)[
-                    'image' => '/img/mock-1.jpg',
-                    'title' => 'Lorem ipsum dolor sit amet.'
-                ],
-                (object)[
-                    'image' => '/img/mock-1.jpg',
-                    'title' => 'Lorem ipsum dolor sit amet.'
-                ],
-                (object) [
-                    'image' => '/img/mock-1.jpg',
-                    'title' => 'Lorem ipsum dolor sit amet.'
-                ],
-                (object)[
-                    'image' => '/img/mock-1.jpg',
-                    'title' => 'Lorem ipsum dolor sit amet.'
-                ],
-                (object)[
-                    'image' => '/img/mock-1.jpg',
-                    'title' => 'Lorem ipsum dolor sit amet.'
+        public static function GetIndexGallery ()
+        {
+            $collection = new Collection();
+            $collection->add(
+                [
+                    (object)[
+                        'image' => '/img/mock-1.jpg',
+                        'title' => 'Lorem ipsum dolor sit amet.',
+                    ],
+                    (object)[
+                        'image' => '/img/mock-1.jpg',
+                        'title' => 'Lorem ipsum dolor sit amet.',
+                    ],
+                    (object)[
+                        'image' => '/img/mock-1.jpg',
+                        'title' => 'Lorem ipsum dolor sit amet.',
+                    ],
+                    (object)[
+                        'image' => '/img/mock-1.jpg',
+                        'title' => 'Lorem ipsum dolor sit amet.',
+                    ],
+                    (object)[
+                        'image' => '/img/mock-1.jpg',
+                        'title' => 'Lorem ipsum dolor sit amet.',
+                    ],
+                    (object)[
+                        'image' => '/img/mock-1.jpg',
+                        'title' => 'Lorem ipsum dolor sit amet.',
+                    ],
+                ]);
+            return $collection;
+        }
+
+        public static function GetPlasmCuttingGallery ()
+        {
+            $collection = new Collection();
+            $collection->add(
+                [
+                    (object)[
+                        'image' => '/img/mock-1.jpg',
+                        'title' => 'Lorem ipsum dolor sit amet.',
+                    ],
+                    (object)[
+                        'image' => '/img/mock-1.jpg',
+                        'title' => 'Lorem ipsum dolor sit amet.',
+                    ],
+                    (object)[
+                        'image' => '/img/mock-1.jpg',
+                        'title' => 'Lorem ipsum dolor sit amet.',
+                    ],
+                    (object)[
+                        'image' => '/img/mock-1.jpg',
+                        'title' => 'Lorem ipsum dolor sit amet.',
+                    ],
+                    (object)[
+                        'image' => '/img/mock-1.jpg',
+                        'title' => 'Lorem ipsum dolor sit amet.',
+                    ],
+                    (object)[
+                        'image' => '/img/mock-1.jpg',
+                        'title' => 'Lorem ipsum dolor sit amet.',
+                    ],
                 ]
-            ]
-        );
-        return $collection;
-    }
+            );
+            return $collection;
+        }
 
-    public static function GetOrderItems()
-    {
-        $items = new Collection();
+        public static function GetOrderItems ()
+        {
+            $items = new Collection();
 
-        $items->add(
-        [
-            (object)[
-                'image'=> '/img/cutter.png',
-                'header'=> 'Металлообработка под
+            $items->add(
+                [
+                    (object)[
+                        'image' => '/img/cutter.png',
+                        'header' => 'Металлообработка под
 заказ в Днепре',
-                'description'=> '<p>Повышенная скорость операции.</p>
+                        'description' => '<p>Повышенная скорость операции.</p>
 <p>Работа с любыми сплавами и металлами.</p>
 <p>Предельная чистота и правильная геометрия кромок.</p>
 <p>Вероятность температурной деформации деталей полностью исключается, даже если рез ведется человеком без практического опыта в данной сфере.</p>
-<p>Выполнение фигурной раскройки образцов.</p>'
-            ],
-            (object)[
-                'image' => '/img/mask.png',
-                'header' => 'Металлообработка под заказ',
-                'description' => '<p>
+<p>Выполнение фигурной раскройки образцов.</p>',
+                    ],
+                    (object)[
+                        'image' => '/img/mask.png',
+                        'header' => 'Металлообработка под заказ',
+                        'description' => '<p>
 Современные способы обработки металла открывают для дизайна среды невиданные доселе возможности. Так на место традиционных ковки и литья приходит плазменная резка, позволяющая получать самые разнообразные формы и узоры. Данному методу обработки металла по силам сложнейшая геометрия изделий.
-</p>'
-            ],
-                (object)[
-                    'image' => '/img/xz.png',
-                    'header' => 'Гибка листового
+</p>',
+                    ],
+                    (object)[
+                        'image' => '/img/xz.png',
+                        'header' => 'Гибка листового
 металла ',
-                    'description' => '<p>Повышенная скорость операции.</p>
+                        'description' => '<p>Повышенная скорость операции.</p>
             <p>Сталь конструкционная, сталь нержавеющая, оцинкованный лист, алюминий и его сплавы.</p>
             <p>Предельная чистота и правильная геометрия кромок.</p>
-            <p>Гибка металлического листа позволяет выполнять изделия и детали различной степени сложности и конфигурации, а также нестандартные конструкции.</p>'
-                ]
-        ]);
-        return $items[0];
+            <p>Гибка металлического листа позволяет выполнять изделия и детали различной степени сложности и конфигурации, а также нестандартные конструкции.</p>',
+                    ],
+                    (object)[
+                        'image' => '/img/pipes.jpg',
+                        'header' => 'Гибка труб, профильных
+труб, полосы, швеллера,
+уголка, арматуры,
+квадрата, круга
+',
+                        'description' => '<p>Повышенная скорость операции.</p>
+            <p>Высокая точность и повторяемость гибки.</p>
+            <p>Высокое качество поверхности изгибаемого
+материала, без рисок и царапин.</p>
+            <p>Возможность радиусной гибки длинных
+заготовок.
+</p>
+<p>Изготовление в указанные сроки.
+</p>',
+                    ],
+                    (object)[
+                        'image' => '/img/piano.jpg',
+                        'header' => 'Рубка металла гильотиной',
+                        'description' => '<p>Высокую точность рубки и производительность
+</p>
+<p>Отличную чистоту резки, то есть отсутствие окалин, обгорелой кромки и других недостатков
+</p>
+<p>Максимальную ровность обрабатываемых краев (наши изделия не требуют дополнительной обработки)
+</p>
+<p>Минимальные потери металла при его обработке (отсутствие отходов в виде металлической стружки)
+</p>
+<p>Не происходит нагрева металла, что закаляет и не усложняет дальнейший процесс металлообработки изделия.
+</p>',
+                    ],
+
+                    (object)[
+                        'image' => '/img/forge.jpg',
+                        'header' => 'Художественная ковка',
+                        'description' => '<p>Художественная ковка на заказ -
+наша основная сфера деятельности.
+</p>
+<p>Ковка — это обработка металла при высокой температуре, во время которой ему придается нужная форма. Издавна таким образом изготавливалось не только оружие и предметы труда, но предметы быта и украшения.
+</p>
+<p>Но кузнецы — народ творческий, поэтому из-под их молотов выходили не только предметы «первой необходимости», но и настоящие кованые произведения декоративного искусства. Кованые изделия украшали дворцы и замки.
+</p>',
+                    ],
+                ]);
+            return $items[0];
+        }
+        public static function GetFeaturesList()
+        {
+            return new Collection(
+                [
+                    (object)['icon'=>'/img/support.svg','title'=>'Универсальность ','text'=>'Возможность одинаково хорошо обрабатывать все виды металлов.'],
+                    (object)['icon'=>'/img/support.svg','title'=>'Универсальность x','text'=>'Возможность одинаково хорошо обрабатывать все виды металлов.'],
+                    (object)['icon'=>'/img/support.svg','title'=>'Универсальность x','text'=>'Возможность одинаково хорошо обрабатывать все виды металлов.'],
+                    (object)['icon'=>'/img/support.svg','title'=>'Универсальность x','text'=>'Возможность одинаково хорошо обрабатывать все виды металлов.'],
+                    (object)['icon'=>'/img/support.svg','title'=>'Универсальность x','text'=>'Возможность одинаково хорошо обрабатывать все виды металлов.'],
+                    (object)['icon'=>'/img/support.svg','title'=>'Универсальность x','text'=>'Возможность одинаково хорошо обрабатывать все виды металлов.']
+                ]);
+        }
+
     }
-
-
-}
 
 ?>

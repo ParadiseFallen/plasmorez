@@ -1,5 +1,6 @@
 const mix = require('laravel-mix');
-require('laravel-mix-serve')
+// require('laravel-mix-serve')
+require('laravel-mix-artisan-serve')
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -10,24 +11,24 @@ require('laravel-mix-serve')
  | file for the application as well as bundling up all the JS files.
  |
  */
-mix.disableSuccessNotifications()
 
 mix
+    .disableSuccessNotifications()
     .sass('resources/css/style.scss', 'public/css/style.css')
     .options({
         postCss :
-        [
-            require('@hail2u/css-mqpacker')
-        ]
+            [
+                require('@hail2u/css-mqpacker')
+            ]
     })
-
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-
-    ])
-
-mix.serve().browserSync({
-    proxy: 'http://localhost:8000/',
+    .js('resources/js/app.js', 'public/js')
+    .serve({
+        host: '127.0.0.1',
+        port: '3000',
+    })
+    .browserSync({
+    proxy: '127.0.0.1:3000',
     tunnel: 'plasmorez',
+    port : 8000,
     online : true,
 })

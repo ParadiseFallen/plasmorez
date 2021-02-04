@@ -16,6 +16,7 @@
 
 .section-header {
   font-weight: 700;
+  word-wrap: break-word;
 }
 
 .white-btn {
@@ -77,7 +78,7 @@
   position: relative;
   border-radius: 15px;
   padding: 15px 15px 80px 15px;
-  border: 2px solid #000;
+  border: 2px solid #000000;
   overflow: hidden;
 }
 .data-card h2 {
@@ -237,34 +238,37 @@ footer .contact-card-text a:hover {
   background: #F0F0F0;
 }
 
-#fancy-info .fancy-card {
+.fancy-card {
   border-radius: 20px;
   border: 2px solid #000;
   overflow: hidden;
 }
-#fancy-info .fancy-card .text {
+.fancy-card .text {
   font-weight: 500;
   font-size: 24px;
 }
-#fancy-info .fancy-card .number {
+.fancy-card .text-small {
+  font-size: 18px;
+}
+.fancy-card .number {
   font-weight: 700;
   background: #000;
   color: #fff;
   font-size: 72px;
 }
-#fancy-info .fancy-card .number.order-last {
+.fancy-card .number.order-last {
   font-weight: 700;
   background: #000;
   color: #fff;
   font-size: 72px;
   transform: translate(15px, 0);
 }
-#fancy-info .fancy-card:last-child {
+.fancy-card:last-child {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
-#fancy-info .fancy-card:last-child .number {
+.fancy-card:last-child .number {
   padding: 0 30px;
 }
 
@@ -297,6 +301,84 @@ section.gray-bg {
 #yangli .yangli-card.right-side {
   border-radius: 0 20px 20px 0;
 }
+
+#call-2,
+#call {
+  background-size: cover;
+  background: 70% no-repeat url("/img/call-1.png"), #000;
+}
+#call-2 h1,
+#call h1 {
+  color: #fff;
+  font-weight: 700;
+}
+
+#call-2 {
+  background: right no-repeat url("/img/call-2.png"), #000;
+}
+#call-2 p {
+  color: #fff;
+}
+
+#pipe-tables h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+#pipe-tables h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+ul li::marker {
+  color: #CD4A3D;
+}
+
+#methods .method-card h1 {
+  font-size: 200px;
+  font-family: "Oswald";
+  line-height: 180px;
+  color: #000;
+}
+#methods .method-card h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+#methods .method-card p {
+  font-size: 14px;
+}
+
+.project-card-wrap {
+  text-decoration: none;
+}
+
+#contact-modal {
+  transition: -webkit-backdrop-filter 0.5s ease-in-out;
+  transition: backdrop-filter 0.5s ease-in-out;
+  transition: backdrop-filter 0.5s ease-in-out, -webkit-backdrop-filter 0.5s ease-in-out;
+}
+#contact-modal.show {
+  -webkit-backdrop-filter: blur(10px) brightness(0.5);
+          backdrop-filter: blur(10px) brightness(0.5);
+}
+#contact-modal .data-card {
+  padding: 0;
+  border: 2px solid #000;
+}
+#contact-modal label {
+  font-weight: 600;
+  font-size: 14px;
+}
+#contact-modal input {
+  border-radius: 20px;
+  border: 2px solid #000;
+  padding: 10px 15px;
+}
+#contact-modal input:focus {
+  outline: none;
+}
+#contact-modal button:focus {
+  outline: none;
+}
 @media screen and (max-width: 568px) {
   .data-card h2 {
     word-break: break-all;
@@ -308,5 +390,21 @@ section.gray-bg {
   }
   #mini-blog .data-row .img-col {
     order: 0;
+  }
+  #yangli .yangli-card-number {
+    font-size: 40px;
+    word-break: break-all;
+  }
+  #yangli .yangli-card-text {
+    font-size: 18px;
+    word-break: break-all;
+  }
+}
+@media screen and (max-width: 576px) {
+  #yangli .yangli-card.right-side {
+    border-radius: 20px;
+  }
+  #yangli .yangli-card {
+    border-radius: 20px;
   }
 }
