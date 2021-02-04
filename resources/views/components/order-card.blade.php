@@ -7,7 +7,7 @@
                     <h2>{{$data->header}}</h2>
                     {!!$data->description!!}
                 </div>
-                <a href="#" class="dark-btn my-md-4 my-1">Заказать</a>
+                <a href="#" class="dark-btn my-md-4 my-1" onclick="callPopup(event)">Заказать</a>
             </div>
             <div class="col-lg-6 @if(!isset($reverse)) order-lg-last @endif order-first">
                 <div class="brackets m-3">

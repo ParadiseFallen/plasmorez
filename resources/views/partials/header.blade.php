@@ -1,8 +1,8 @@
-<header class="fixed-top">
+<header class="@if(Route::currentRouteName() != 'gallery') fixed-top @endif">
     <div class="container">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/">
                     <div>
                         <img src="/img/logo.png" alt="" class="img-fluid">
                     </div>

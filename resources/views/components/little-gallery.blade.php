@@ -13,7 +13,7 @@
                         <img src="{{$item->image}}" alt="" class="img-fluid w-100">
                     </div>
                     <div class="little-gallery-card-description text-center">
-                        <span>{{$item->title}}</span>
+                        <span class="px-3">{{$item->title}}</span>
                     </div>
                 </div>
             </div>

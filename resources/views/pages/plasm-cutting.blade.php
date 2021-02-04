@@ -7,7 +7,7 @@
 
     @include('components/order-card',['data'=>\App\StaticPageData::GetOrderItems()[0]])
 
-    @include('components/little-gallery',['images'=> \App\StaticPageData::GetIndexGallery()])
+    @include('components/little-gallery',['images'=> \App\StaticPageData::GetPlasmCuttingGallery()])
 
 
     <section id="fancy-info" class="my-3">

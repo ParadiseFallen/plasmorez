@@ -55,12 +55,12 @@
             </div>
         </div>
         <div class="row my-3">
-            <div class="col-8">
+            <div class="col-md-8">
                 <div class="">
                     <span>2021 © Plazmorez Все права защищены.  </span>
                 </div>
             </div>
-            <div class="col-4 flex-column в">
+            <div class="col-md-4 flex-column в">
                 <span>Разработано:</span>
                 <a href="https://digitallab.com.ua/">
                     <img src="{{asset('/img/dlab.png')}}" alt="" class="img-fluid">

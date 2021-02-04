@@ -12,60 +12,62 @@
                 [
                     (object)[
                         'image' => '/img/mock-1.jpg',
-                        'title' => 'Lorem ipsum dolor sit amet.',
+                        'title' => 'Плазменная резка металла
+и её преимущества',
                     ],
                     (object)[
-                        'image' => '/img/mock-1.jpg',
-                        'title' => 'Lorem ipsum dolor sit amet.',
+                        'image' => '/img/index-2.jpg',
+                        'title' => 'Профессиональная гибка металла
+',
                     ],
                     (object)[
-                        'image' => '/img/mock-1.jpg',
-                        'title' => 'Lorem ipsum dolor sit amet.',
+                        'image' => '/img/index-3.jpg',
+                        'title' => 'Сварочно-сборочные работы',
                     ],
                     (object)[
-                        'image' => '/img/mock-1.jpg',
-                        'title' => 'Lorem ipsum dolor sit amet.',
+                        'image' => '/img/index-4.jpg',
+                        'title' => 'Рубка металла гильотиной',
                     ],
                     (object)[
-                        'image' => '/img/mock-1.jpg',
-                        'title' => 'Lorem ipsum dolor sit amet.',
+                        'image' => '/img/index-5.jpg',
+                        'title' => 'Гибка вальцовка труб, уголка, швеллера',
                     ],
                     (object)[
-                        'image' => '/img/mock-1.jpg',
-                        'title' => 'Lorem ipsum dolor sit amet.',
+                        'image' => '/img/index-6.jpg',
+                        'title' => 'Художественная ковка',
                     ],
                 ]);
             return $collection;
         }
 
-        public static function GetPlasmCuttingGallery ()
+        public static function GetPlasmCuttingGallery()
         {
             $collection = new Collection();
             $collection->add(
                 [
                     (object)[
-                        'image' => '/img/mock-1.jpg',
-                        'title' => 'Lorem ipsum dolor sit amet.',
+                        'image' => '/img/plasm-1.jpg',
+                        'title' => 'Ворота, калитки, входная группа',
                     ],
                     (object)[
-                        'image' => '/img/mock-1.jpg',
-                        'title' => 'Lorem ipsum dolor sit amet.',
+                        'image' => '/img/plasm-2.jpg',
+                        'title' => 'Промышленные детали под заказ',
                     ],
                     (object)[
-                        'image' => '/img/mock-1.jpg',
-                        'title' => 'Lorem ipsum dolor sit amet.',
+                        'image' => '/img/plasm-3.jpg',
+                        'title' => 'Декор интерьера, скульптура',
                     ],
                     (object)[
-                        'image' => '/img/mock-1.jpg',
-                        'title' => 'Lorem ipsum dolor sit amet.',
+                        'image' => '/img/plasm-4.jpg',
+                        'title' => 'Рубка металла гильотиной',
                     ],
                     (object)[
-                        'image' => '/img/mock-1.jpg',
-                        'title' => 'Lorem ipsum dolor sit amet.',
+                        'image' => '/img/plasm-5.jpg',
+                        'title' => 'Гибка вальцовка труб, уголка, швеллера',
                     ],
                     (object)[
-                        'image' => '/img/mock-1.jpg',
-                        'title' => 'Lorem ipsum dolor sit amet.',
+                        'image' => '/img/plasm-6.jpg',
+                        'title' => 'Художественная ковка',
                     ],
                 ]
             );
@@ -154,12 +156,12 @@
         {
             return new Collection(
                 [
-                    (object)['icon'=>'/img/support.svg','title'=>'Универсальность ','text'=>'Возможность одинаково хорошо обрабатывать все виды металлов.'],
-                    (object)['icon'=>'/img/support.svg','title'=>'Универсальность x','text'=>'Возможность одинаково хорошо обрабатывать все виды металлов.'],
-                    (object)['icon'=>'/img/support.svg','title'=>'Универсальность x','text'=>'Возможность одинаково хорошо обрабатывать все виды металлов.'],
-                    (object)['icon'=>'/img/support.svg','title'=>'Универсальность x','text'=>'Возможность одинаково хорошо обрабатывать все виды металлов.'],
-                    (object)['icon'=>'/img/support.svg','title'=>'Универсальность x','text'=>'Возможность одинаково хорошо обрабатывать все виды металлов.'],
-                    (object)['icon'=>'/img/support.svg','title'=>'Универсальность x','text'=>'Возможность одинаково хорошо обрабатывать все виды металлов.']
+                    (object)['icon'=>'/img/support.svg','title'=>'Универсальность','text'=>'Возможность одинаково хорошо обрабатывать все виды металлов.'],
+                    (object)['icon'=>'/img/speed.svg','title'=>'Оперативность','text'=>'Высокая скорость исполнения заказа. Производства размещены на одной площадке.'],
+                    (object)['icon'=>'/img/gear.svg','title'=>'Практичность','text'=>'Все специалисты от конструктора до последнего исполнителя работают в одной команде.'],
+                    (object)['icon'=>'/img/mark.svg','title'=>'Качество','text'=>'Все процессы контролируются от приема заказа до сдачи продукции заказчику.'],
+                    (object)['icon'=>'/img/mark.svg','title'=>'Качество','text'=>'Все процессы контролируются от приема заказа до сдачи продукции заказчику.'],
+                    (object)['icon'=>'/img/vip.svg','title'=>'Экономичность','text'=>'Исполнение всего заказа в одном месте от проекта до готового изделия.']
                 ]);
         }
 
