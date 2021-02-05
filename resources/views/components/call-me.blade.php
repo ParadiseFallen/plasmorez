@@ -1,5 +1,6 @@
 <section id="call-me" class="my-4">
     <form action="">
+        @csrf
         <div class="container">
             <div class="row py-4 align-items-center d-">
                 <div class="col-md-7">
@@ -18,9 +19,9 @@
         let callMeForm = document.querySelector('#call-me form')
         callMeForm.addEventListener('submit',event=>{
             event.preventDefault()
-            if(form.reportValidity())
+            if(callMeForm.reportValidity())
             {
-                let data = new FormData(form)
+                let data = new FormData(callMeForm)
                 fetch('/contact-me',
                     {
                         method : 'POST',

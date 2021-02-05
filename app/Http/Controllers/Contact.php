@@ -10,7 +10,7 @@ class Contact extends Controller
 
     public function contactMe(Request $request)
     {
-        $name = $request->input('name','Неизвестно');
+        $name = $request->input('name')?? 'Неизвестно';
         $phone = $request->input('phone');
         Telegram::sendMessage([
             'chat_id' => '344213557',
