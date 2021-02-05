@@ -8,11 +8,11 @@
                   @csrf
                   <div class="form-group d-flex flex-column">
                       <label class="my-3">Имя</label>
-                      <input type="text" placeholder="Введите имя" required>
+                      <input type="text" name="name" placeholder="Введите имя" required>
                   </div>
                   <div class="form-group d-flex flex-column">
                       <label class="my-3">Телефон</label>
-                      <input type="tel" placeholder="Введите ваш номер телефона" required>
+                      <input type="tel" name="phone" placeholder="Введите ваш номер телефона" required>
                   </div>
               </form>
               <button type="submit" class="my-4 align-self-center dark-btn">Оставить заявку</button>

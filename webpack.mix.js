@@ -31,4 +31,5 @@ mix
     tunnel: 'plasmorez',
     port : 8000,
     online : true,
+    // https: true,
 })
