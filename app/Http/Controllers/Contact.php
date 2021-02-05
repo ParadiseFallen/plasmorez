@@ -14,8 +14,10 @@ class Contact extends Controller
         $phone = $request->input('phone');
         Telegram::sendMessage([
             'chat_id' => '344213557',
-            'text' => "<b>Имя: </b> $name <br>
-            <b>Телефон: </b> <a href='tel:+$phone'>$phone</a>"
+            'text' =>
+"<b>Имя: </b> $name
+<b>Телефон: </b> <a href='tel:+$phone'>$phone</a>",
+            'parse_mode' => 'html'
         ]);
         return response(200);
     }
